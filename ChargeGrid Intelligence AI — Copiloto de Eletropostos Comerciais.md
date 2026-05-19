@@ -19,7 +19,7 @@ Atualmente, a falta de inteligência operacional gera:
 O **ChargeGrid Intelligence AI** foi projetado para atuar como uma ferramenta operacional de suporte em tempo real, eliminando telas complexas e fornecendo respostas imediatas para tomada de decisão.
 
 * **Persona Atendida:** Operador Comercial / Gestor de Infraestrutura de Recarga.
-* **Justificativa do Escopo:** Optou-se pelo cenário comercial (ChargeGrid Intelligence) em detrimento do condominial por apresentar maior complexidade técnica (orquestração de carga em larga escala, balanceamento dinâmico e conformidade rigorosa com protocolos industriais), onde uma Inteligência Artificial possui maior valor agregado para mitigar prejuízos financeiros e falhas de infraestrutura.
+* **Justificativa do Escopo:** A escolha pelo cenário comercial (ChargeGrid Intelligence) em vez do modelo condominial justifica-se por sua maior complexidade técnica. O ambiente comercial exige orquestração de carga em larga escala, balanceamento dinâmico e conformidade rigorosa com protocolos industriais, cenários onde uma Inteligência Artificial entrega maior valor agregado para mitigar prejuízos financeiros e evitar falhas críticas na infraestrutura.
 * **Capacidades Principais:** 1. Orientar sobre regras de balanceamento de carga (Load Balancing) e gerenciamento de potência.
   2. Auxiliar na configuração e simulação de políticas de tarifação dinâmica comercial.
   3. Servir como guia técnico para troubleshooting e diagnóstico rápido de conexões OCPP e MODBUS no EV Charger GoodWe.
