@@ -1,3 +1,6 @@
+## 📊 Fluxograma de Funcionamento do Chatbot
+
+```mermaid
 graph TD
     %% Definição de Cores
     classDef user fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;
