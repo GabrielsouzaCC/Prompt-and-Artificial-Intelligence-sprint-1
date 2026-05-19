@@ -9,14 +9,14 @@ graph TD
     classDef ai fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px;
 
     %% Elementos
-    A[👤 Usuário / Operador Comercial]:::user
-    B[💻 Interface Web - Streamlit]:::interface
-    C{⚙️ Backend Python / LangChain}:::backend
-    D[📄 System Prompt - Contexto]:::backend
-    E[🧠 API do LLM - Gemini 1.5 Flash]:::ai
-    F{🛡️ Verificação de Escopo}:::backend
-    G[✅ Resposta Técnica/Solução]:::interface
-    H[🚫 Mensagem de Recusa - Fora do escopo]:::interface
+    A[👤 Usuário /<br>Operador Comercial]:::user
+    B[💻 Interface Web -<br>Streamlit]:::interface
+    C{⚙️ Backend Python /<br>LangChain}:::backend
+    D[📄 System Prompt -<br>Contexto]:::backend
+    E[🧠 API do LLM -<br>Gemini 1.5 Flash]:::ai
+    F{🛡️ Verificação<br>de Escopo}:::backend
+    G[✅ Resposta Técnica /<br>Solução]:::interface
+    H[🚫 Mensagem de Recusa -<br>Fora do escopo]:::interface
 
     %% Fluxo
     A -->|1. Digita a Dúvida| B
