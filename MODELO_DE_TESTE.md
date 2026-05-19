@@ -1,4 +1,5 @@
-##  Modelo de Teste Simplificado (Para Validação na Sprint 2)
+##  Modelo de Teste 
+A tabela abaixo apresenta os 5 casos de teste planejados para validar as respostas do chatbot durante a próxima sprint. 
 
 | ID | Contexto | Pergunta do Usuário (Input) | Resposta Ideal Esperada (Output) |
 | :---: | :--- | :--- | :--- |
