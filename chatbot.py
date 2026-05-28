@@ -9,10 +9,10 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from typing import List, Tuple
 
 class ChargeGridBot:
-   def __init__(self, api_key: str):
-        # Usando a versão exata 002 para blindar contra bugs de nomeclatura
+    def __init__(self, api_key: str):
+        # Atualizado para gemini-2.0-flash para rodar na API estável atualizada
         self.model = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash-002", 
+            model="gemini-2.0-flash",
             google_api_key=api_key,
             temperature=0.7
         )
