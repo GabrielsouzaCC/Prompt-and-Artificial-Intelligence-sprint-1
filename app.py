@@ -216,5 +216,4 @@ if submitted and user_input.strip():
             st.session_state["messages"].append({"role": "assistant", "content": response})
         except Exception as e:
             st.error(f"Erro ao contatar a API: {e}")
-
     st.rerun()
