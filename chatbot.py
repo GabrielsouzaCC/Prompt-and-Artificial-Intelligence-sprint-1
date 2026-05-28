@@ -4,7 +4,7 @@ Gerencia o system prompt, histórico de conversa e chamada à API Gemini via Lan
 """
 
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.schema import SystemMessage, HumanMessage, AIMessage
+from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from typing import List, Tuple
 
 # ─── System Prompt ────────────────────────────────────────────────────────────
