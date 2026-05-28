@@ -16,7 +16,6 @@ class ChargeGridBot:
             google_api_key=api_key,
             temperature=0.7
         )
-        )
         
         # System Prompt definindo o escopo do copiloto operacional
         self.system_prompt = SystemMessage(
