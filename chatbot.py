@@ -9,12 +9,13 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from typing import List, Tuple
 
 class ChargeGridBot:
-    def __init__(self, api_key: str):
-        # Voltando para o 1.5-flash, que é hiper estável e tem cota gratuita global liberada!
+   def __init__(self, api_key: str):
+        # Usando a versão exata 002 para blindar contra bugs de nomeclatura
         self.model = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash",
+            model="gemini-1.5-flash-002", 
             google_api_key=api_key,
             temperature=0.7
+        )
         )
         
         # System Prompt definindo o escopo do copiloto operacional
