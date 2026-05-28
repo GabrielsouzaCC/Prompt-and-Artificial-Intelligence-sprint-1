@@ -10,9 +10,9 @@ from typing import List, Tuple
 
 class ChargeGridBot:
     def __init__(self, api_key: str):
-        # Inicializa o modelo Gemini 1.5 Flash com a string direta recomendada
+        # ATENÇÃO: Usando a tag -latest para evitar o erro 404 NOT_FOUND
         self.model = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash",
+            model="gemini-1.5-flash-latest",
             google_api_key=api_key,
             temperature=0.7
         )
