@@ -10,9 +10,9 @@ from typing import List, Tuple
 
 class ChargeGridBot:
     def __init__(self, api_key: str):
-        # Inicializa o modelo Gemini 1.5 Flash usando o identificador correto
+        # Inicializa o modelo Gemini 1.5 Flash com a string direta recomendada
         self.model = ChatGoogleGenerativeAI(
-            model="models/gemini-1.5-flash",
+            model="gemini-1.5-flash",
             google_api_key=api_key,
             temperature=0.7
         )
