@@ -45,13 +45,27 @@ class ChargeGridBot:
         try:
             # 3. Chama a API da Google via LangChain
             response = self.model.invoke(langchain_messages)
-            response_text = response.content if hasattr(response, 'content') else str(response)
+            raw_content = response.content if hasattr(response, 'content') else response
+            
+            # NOVA LÓGICA: Se o LangChain devolver uma lista, transforma em string
+            if isinstance(raw_content, list):
+                # Junta todas as partes da mensagem em um texto só
+                text_parts = []
+                for part in raw_content:
+                    if isinstance(part, dict) and "text" in part:
+                        text_parts.append(part["text"])
+                    else:
+                        text_parts.append(str(part))
+                response_text = "\n".join(text_parts)
+            else:
+                # Se já for string, apenas garante a conversão
+                response_text = str(raw_content)
             
             if not response_text.strip():
                 response_text = "Desculpe, recebi uma resposta vazia do servidor. Pode tentar reformular a pergunta?"
+                
         except Exception as e:
             response_text = f"Erro interno na geração da IA: {str(e)}"
-
         # 4. Atualiza a lista estruturada para o st.session_state do app.py
         updated_history = list(history)
         updated_history.append({"role": "user", "content": user_message})
