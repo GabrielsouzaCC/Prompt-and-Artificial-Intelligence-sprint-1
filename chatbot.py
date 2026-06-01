@@ -12,7 +12,11 @@ class ChargeGridBot:
     def __init__(self, api_key: str):
         # Atualizado para gemini-2.0-flash para rodar na API estável atualizada
         self.model = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash-002",
+            model="self.model = ChatGoogleGenerativeAI(
+            model="gemini-1.5-flash", 
+            google_api_key=api_key,
+            temperature=0.7
+        )2",
             google_api_key=api_key,
             temperature=0.7
         )
