@@ -66,6 +66,7 @@ class ChargeGridBot:
                 
         except Exception as e:
             response_text = f"Erro interno na geração da IA: {str(e)}"
+            
         # 4. Atualiza a lista estruturada para o st.session_state do app.py
         updated_history = list(history)
         updated_history.append({"role": "user", "content": user_message})
