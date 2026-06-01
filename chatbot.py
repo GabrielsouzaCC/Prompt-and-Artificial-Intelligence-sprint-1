@@ -17,6 +17,7 @@ class ChargeGridBot:
             temperature=0.7
         )
         
+        
         # System Prompt definindo o escopo do copiloto operacional
         self.system_prompt = SystemMessage(
             content=(
