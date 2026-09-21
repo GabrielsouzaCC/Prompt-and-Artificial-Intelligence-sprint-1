@@ -1,0 +1,18 @@
+EV Challenge 2026 — GoodWe x FIAP
+Sprint 3: Agentes de IA e Evolução Conversacional
+Disciplina: Prompt and Artificial Intelligence
+
+Nome: [Gabriel Souza]
+RM:   [571583]
+Turma: [CCPQ]
+Responsabilidade: [Desenvolvimento do agente LangGraph, implementação do guardrail, integração com a API OpenAI e execução dos testes]
+
+Nome: [Rafael Sá]
+RM:   [569223]
+Turma: [CCPQ]
+Responsabilidade: [Documentação dos casos de teste, comparação entre modelos e elaboração do relatorio_modelos.md]
+
+Nome: [João Melo]
+RM:   [571116]
+Turma: [CCPQ]
+Responsabilidade: [Elaboração do relatório de evolução e implementação do guardrail]
